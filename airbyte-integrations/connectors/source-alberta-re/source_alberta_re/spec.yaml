@@ -49,7 +49,6 @@ connectionSpecification:
     status:
       type: string
       title: Status of the listing. 
-      default: NA
       description: >-
         One of a = Active, p = Pending, s = Sold or o = Off-Market
       enum:
