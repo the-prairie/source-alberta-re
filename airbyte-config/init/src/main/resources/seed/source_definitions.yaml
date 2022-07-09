@@ -1,3 +1,11 @@
+- name: Alberta Real Estate
+  sourceDefinitionId: a53f985a-ffc6-11ec-b939-0242ac120002
+  dockerRepository: airbyte/source-alberta-re
+  dockerImageTag: dev
+  documentationUrl: https://albertare.com/
+  icon: alberta-real-estate.svg
+  sourceType: api
+  releaseStage: alpha
 - name: Airtable
   sourceDefinitionId: 14c6e7ea-97ed-4f5e-a7b5-25e9a80b8212
   dockerRepository: airbyte/source-airtable
