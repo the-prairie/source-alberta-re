@@ -1,13 +1,60 @@
 documentationUrl: https://docsurl.com
 connectionSpecification:
   $schema: http://json-schema.org/draft-07/schema#
-  title: Alberta Re Spec
+  title: Alberta Real Estate Spec
   type: object
   required:
-    - TODO
+    - email
   additionalProperties: false
   properties:
-    # 'TODO: This schema defines the configuration required for the source. This usually involves metadata such as database and/or authentication information.':
-    TODO:
+    email:
       type: string
-      description: describe me
+      title: Email Address
+      description: >-
+        Your email address to authenticate with.
+      order: 0
+    max_days_listed:
+      type: integer
+      title: Maximum number of days listed on site (Optional)
+      minimum: 1
+      description: >-
+        When set, the connector will always re-export data from the past N days,
+        where N is the value set here. This is useful if your data is frequently updated
+        after creation.
+      enum:
+        - 1
+        - 3
+        - 7
+        - 14
+        - 30
+        - 45
+        - 60
+      order: 1
+    min_days_listed:
+      type: integer
+      title: Minimum number of days listed on site (Optional)
+      minimum: 7
+      description: >-
+        When set, the connector will always re-export listings if they have been on the site for
+        longer than the past N days, where N is the value set here. 
+      enum:
+        - 7
+        - 14
+        - 30
+        - 45
+        - 60
+        - 90
+        - 180
+      order: 2
+    status:
+      type: string
+      title: Status of the listing. 
+      default: NA
+      description: >-
+        One of a = Active, p = Pending, s = Sold or o = Off-Market
+      enum:
+        - a
+        - p
+        - s
+        - o
+      order: 3

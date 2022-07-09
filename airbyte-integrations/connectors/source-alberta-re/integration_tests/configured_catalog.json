@@ -2,21 +2,526 @@
   "streams": [
     {
       "stream": {
-        "name": "customers",
-        "json_schema": {},
-        "supported_sync_modes": ["full_refresh"]
+        "name": "properties",
+        "json_schema": {
+          "$schema": "https://json-schema.org/draft-07/schema",
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "type": [
+                null,
+                "integer"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "created_at": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "updated_at": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "listed_at": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "mls": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "street": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "address": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "city": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "state": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "zip": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "neighborhood": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "area": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "county": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "price": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "status": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "type": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "is_for_rent": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "is_for_sale": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "bedrooms": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "bathrooms": {
+                  "type": [
+                    null,
+                    "number"
+                  ]
+                },
+                "half_bathrooms": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "square": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "lot_square": {
+                  "type": [
+                    null,
+                    "number"
+                  ]
+                },
+                "broker": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "agent": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "year": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "virtual_tour": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "images_total": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "garages_total": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "parking_total": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "style": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "location": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "lon": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "lat": {
+                      "type": [
+                        null,
+                        "number"
+                      ]
+                    }
+                  }
+                },
+                "price_reduced_at": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "schools": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "city_label": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "rating": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "isManuallyRated": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "ratingInfo": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "is_active": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "mls_neighborhood": {
+                  "type": [
+                    null,
+                    "string"
+                  ]
+                },
+                "tax_amount": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                },
+                "hoa_dues": {
+                  "type": [
+                    null,
+                    "integer"
+                  ]
+                }
+              }
+            },
+            "status": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "text": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "color": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "buyerAgent": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "id": {
+                      "type": [
+                        null,
+                        "integer"
+                      ]
+                    },
+                    "name": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "title": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "email": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "phone": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "picture": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "animatedPicture": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "site": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "signature": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "office": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "isVisibleOnCS": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "reviews": {
+                      "type": "object",
+                      "additionalProperties": true,
+                      "properties": {
+                        "data": {
+                          "type": "array"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "meta": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "is_favourite": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "is_favorited_by": {
+                      "type": [
+                        null,
+                        "array"
+                      ]
+                    },
+                    "url": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "priceTrend": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "legalDisclaimer": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "legalDisclaimer": {
+                      "type": "object",
+                      "additionalProperties": true,
+                      "properties": {
+                        "properties": {
+                          "type": [
+                            null,
+                            "string"
+                          ]
+                        },
+                        "property": {
+                          "type": [
+                            null,
+                            "string"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "source": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "type": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "name": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "title": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "displayMLSInfo": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "legalDisclaimer": {
+                      "type": [
+                        null,
+                        "string"
+                      ]
+                    },
+                    "hideStatuses": {
+                      "type": [
+                        null,
+                        "array"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "supported_sync_modes": [
+          "full_refresh"
+        ],
+        "source_defined_primary_key": [
+          [
+            "id"
+          ]
+        ]
       },
       "sync_mode": "full_refresh",
       "destination_sync_mode": "overwrite"
-    },
-    {
-      "stream": {
-        "name": "employees",
-        "json_schema": {},
-        "supported_sync_modes": ["full_refresh", "incremental"]
-      },
-      "sync_mode": "incremental",
-      "destination_sync_mode": "append"
     }
   ]
 }
