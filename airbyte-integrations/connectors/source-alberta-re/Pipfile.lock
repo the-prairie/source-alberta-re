@@ -18,11 +18,11 @@
     "default": {
         "airbyte-cdk": {
             "hashes": [
-                "sha256:09b82f3c9c5b0e8d3857318a1b6b0267b743a0102ab5d9a8b4d54500bacd47ee",
-                "sha256:ee587d65f2e074677013bbc2e16ab63e363699dc308afb4fd54f3cbb3a3ba227"
+                "sha256:be442376a773a8874ac84b3296740ad405a58888c0e9ce625faaaaad2a3fb702",
+                "sha256:ffd0d9dd1191ea9f3a2be0cba8bbc3d09c7bee19b64d4517bd5ec2561a0a7965"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==0.1.62"
+            "version": "==0.1.64"
         },
         "attrs": {
             "hashes": [
@@ -45,7 +45,7 @@
                 "sha256:84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d",
                 "sha256:fe86415d55e84719d75f8b69414f6438ac3547d2078ab91b67e779ef69378412"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2022.6.15"
         },
         "charset-normalizer": {
@@ -53,7 +53,7 @@
                 "sha256:5189b6f22b01957427f35b6a08d9a0bc45b46d3788ef5a92e978433c7a35f8a5",
                 "sha256:575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2.1.0"
         },
         "deprecated": {
@@ -69,7 +69,7 @@
                 "sha256:7a79bb439e3df59d0a72621775d600bc8bc8b422d285824cb37103eab91d1ce0",
                 "sha256:d916a26b62970e7c2f554110ed6af04c7ccff8e9f81ad17d0d40c75637e227fb"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==5.0.3"
         },
         "dpath": {
@@ -128,7 +128,7 @@
                 "sha256:088c1855bbb06020b8892aaced112661535684fd0956c191393f67ce9604bdf3",
                 "sha256:397b15b7721bfc7fa8b6a11bce8748f6d55013369fec3537dc88a5740e0aef5f"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==1.5.3"
         },
         "jinja2": {
@@ -269,7 +269,7 @@
                 "sha256:dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb",
                 "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==21.3"
         },
         "pdbpp": {
@@ -311,7 +311,7 @@
                 "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159",
                 "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==1.0.0"
         },
         "pprintpp": {
@@ -375,7 +375,7 @@
                 "sha256:5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb",
                 "sha256:dc9c10fb40944260f6ed4c688ece0cd2048414940f1cea51b8b226318411c519"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2.12.0"
         },
         "pyparsing": {
@@ -424,7 +424,7 @@
                 "sha256:131b36680866a76e6781d13f101efb86cf674ebb9762eb70d3082b6f29889e89",
                 "sha256:7310f8d27bc79ced999e760ca304d69f6ba6c6649c0b60fb0e04a4a77cacc134"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==6.2.5"
         },
         "pytest-sugar": {
@@ -712,7 +712,7 @@
                 "sha256:fce78593346c014d0d986b7ebc80d782b7f5e19843ca798ed62f8e3ba8728576",
                 "sha256:fd547ec596d90c8676e369dd8a581a21227fe9b4ad37d0dc7feb4ccf544c2d59"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==1.7.2"
         }
     },
@@ -788,11 +788,11 @@
         },
         "ipykernel": {
             "hashes": [
-                "sha256:b59f9d9672c3a483494bb75915a2b315e78b833a38b039b1ee36dc28683f0d89",
-                "sha256:b9ed519a29eb819eb82e87e0d3754088237b233e5c647b8bb0ff23c8c70ed16f"
+                "sha256:37acc3254caa8a0dafcddddc8dc863a60ad1b46487b68aee361d9a15bda98112",
+                "sha256:d8969c5b23b0e453a23166da5a669c954db399789293fcb03fec5cb25367e43c"
             ],
             "index": "pypi",
-            "version": "==6.15.0"
+            "version": "==6.15.1"
         },
         "ipython": {
             "hashes": [
@@ -820,11 +820,11 @@
         },
         "jupyter-core": {
             "hashes": [
-                "sha256:3ac8784dd2740257a82551fbdaacad48956f1326290fbcc5e47a808347422cee",
-                "sha256:7cf01bed6579e83241b655c76910f5d608c4b1265dbffc0ffd4df3244628e31e"
+                "sha256:2e5f244d44894c4154d06aeae3419dd7f1b0ef4494dc5584929b398c61cfd314",
+                "sha256:715e22bb6cc7db3718fddfac1f69f1c7e899ca00e42bdfd4bf3705452b9fd84a"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.11.0"
+            "version": "==4.11.1"
         },
         "matplotlib-inline": {
             "hashes": [
@@ -847,7 +847,7 @@
                 "sha256:dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb",
                 "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==21.3"
         },
         "parso": {
@@ -938,7 +938,7 @@
                 "sha256:5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb",
                 "sha256:dc9c10fb40944260f6ed4c688ece0cd2048414940f1cea51b8b226318411c519"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2.12.0"
         },
         "pyparsing": {
