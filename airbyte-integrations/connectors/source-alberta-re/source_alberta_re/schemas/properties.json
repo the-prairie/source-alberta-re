@@ -4,20 +4,23 @@
   "additionalProperties": true,
   "properties": {
       "id": {
-          "type": ["null", "integer"]
+          "type": ["null", "string"]
       },
       "attributes": {
           "type": "object",
           "additionalProperties": true,
           "properties": {
               "created_at": {
-                  "type": ["null", "string"]
+                  "type": ["null", "string"],
+                  "format": "date-time"
               },
               "updated_at": {
-                  "type": ["null", "string"]
+                  "type": ["null", "string"],
+                  "format": "date-time"
               },
               "listed_at": {
-                  "type": ["null", "string"]
+                  "type": ["null", "string"],
+                  "format": "date-time"
               },
               "mls": {
                   "type": ["null", "string"]
@@ -47,7 +50,7 @@
                   "type": ["null", "string"]
               },
               "price": {
-                  "type": ["null", "integer"]
+                  "type": ["null", "number"]
               },
               "status": {
                   "type": ["null", "string"]
@@ -59,10 +62,10 @@
                   "type": ["null", "string"]
               },
               "is_for_rent": {
-                  "type": ["null", "string"]
+                  "type": ["null", "boolean"]
               },
               "is_for_sale": {
-                  "type": ["null", "string"]
+                  "type": ["null", "boolean"]
               },
               "bedrooms": {
                   "type": ["null", "integer"]
@@ -74,7 +77,7 @@
                   "type": ["null", "integer"]
               },
               "square": {
-                  "type": ["null", "integer"]
+                  "type": ["null", "number"]
               },
               "lot_square": {
                   "type": ["null", "number"]
@@ -98,7 +101,7 @@
                   "type": ["null", "integer"]
               },
               "parking_total": {
-                  "type": ["null", "string"]
+                  "type": ["null", "integer"]
               },
               "style": {
                   "type": ["null", "string"]
@@ -108,7 +111,7 @@
                   "additionalProperties": true,
                   "properties": {
                       "lon": {
-                          "type": ["null", "string"]
+                          "type": ["null", "number"]
                       },
                       "lat": {
                           "type": ["null", "number"]
@@ -116,7 +119,8 @@
                   }
               },
               "price_reduced_at": {
-                  "type": ["null", "string"]
+                  "type": ["null", "string"],
+                  "format": "date-time"
               },
               "schools": {
                   "type": ["null", "string"]
@@ -128,19 +132,19 @@
                   "type": ["null", "string"]
               },
               "isManuallyRated": {
-                  "type": ["null", "string"]
+                  "type": ["null", "boolean"]
               },
               "ratingInfo": {
                   "type": ["null", "string"]
               },
               "is_active": {
-                  "type": ["null", "string"]
+                  "type": ["null", "boolean"]
               },
               "mls_neighborhood": {
                   "type": ["null", "string"]
               },
               "tax_amount": {
-                  "type": ["null", "integer"]
+                  "type": ["null", "number"]
               },
               "hoa_dues": {
                   "type": ["null", "integer"]
@@ -204,7 +208,7 @@
                           "type": ["null", "string"]
                       },
                       "isVisibleOnCS": {
-                          "type": ["null", "string"]
+                          "type": ["null", "boolean"]
                       },
                       "reviews": {
                           "type": "object",
@@ -228,7 +232,7 @@
                   "additionalProperties": true,
                   "properties": {
                       "is_favourite": {
-                          "type": ["null", "string"]
+                          "type": ["null", "boolean"]
                       },
                       "is_favorited_by": {
                           "type": ["null", "array"]
@@ -285,7 +289,7 @@
                           "type": ["null", "string"]
                       },
                       "displayMLSInfo": {
-                          "type": ["null", "string"]
+                          "type": ["null", "boolean"]
                       },
                       "legalDisclaimer": {
                           "type": ["null", "string"]
