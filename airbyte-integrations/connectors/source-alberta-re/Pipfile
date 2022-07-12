@@ -7,6 +7,9 @@ name = "pypi"
 source-acceptance-test = {editable = true, file = "file:///Users/zar/Desktop/the-prairie/airbyte/airbyte-integrations/bases/source-acceptance-test"}
 source-alberta-re = {editable = true, file = "file:///Users/zar/Desktop/the-prairie/airbyte/airbyte-integrations/connectors/source-alberta-re"}
 fake-useragent = "*"
+requests-futures = "*"
+pyarrow = "*"
+requests-html = "*"
 
 [dev-packages]
 ipykernel = "*"
