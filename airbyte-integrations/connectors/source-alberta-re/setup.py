@@ -10,7 +10,8 @@ MAIN_REQUIREMENTS = [
     "fake-useragent~=0.1.11",
     "pendulum~=2.1.2",
     "pytz",
-    "urllib3"
+    "urllib3",
+    "requests-futures"
 ]
 
 TEST_REQUIREMENTS = [
