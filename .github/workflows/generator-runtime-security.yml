@@ -1,0 +1,22 @@
+name: Generator runtime security
+on:
+  pull_request:
+    paths:
+      - "airbyte-integrations/connector-templates/**"
+      - ".github/workflows/generator-runtime-security.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  generator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build patched generator
+        run: docker build --pull -t generator-security airbyte-integrations/connector-templates/generator
+      - name: Verify runtime and generate synthetic connector
+        run: |
+          docker run --rm --entrypoint node generator-security -e 'require("node:assert/strict").equal(require("node:zlib").constants.BROTLI_DECODER_ERROR_FORMAT_BLOCK_SWITCH, -17)'
+          docker run --rm -v "$PWD:/airbyte" --entrypoint sh generator-security -c 'npm ci --ignore-scripts && npm run generate -- "Python Destination" runtime-security-smoke'
+          test -f airbyte-integrations/connectors/destination-runtime-security-smoke/main.py
